@@ -1,4 +1,4 @@
 #!/usr/bin/python3.8
 import sys
 version = "Python %d.%d" % (sys.version_info.major, sys.version_info.minor)
-print("Hello, Red Hat Developer World from",version)
+print("Hello World",version)
