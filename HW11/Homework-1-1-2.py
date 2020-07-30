@@ -1,3 +1,5 @@
+#!/usr/bin/python3.8
+
 number = -1
 
 while ((number < 0) or (number > 10)):
