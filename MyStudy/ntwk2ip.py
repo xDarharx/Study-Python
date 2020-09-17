@@ -1,6 +1,6 @@
 #!/usr/bin/python3.8
 
-with open ('./MyStudy/nets.csv', 'r') as nets_file:
+with open ('nets.csv', 'r') as nets_file:
     for line in nets_file:
         tmp_line = line.replace('\n', '')
         print (tmp_line)
