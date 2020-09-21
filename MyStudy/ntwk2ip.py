@@ -8,5 +8,8 @@ with open ('./nets.csv', 'r') as nets_file:
             for ip_addr in ipaddress.IPv4Network(line.replace('\n', '')).hosts():
                 ip_addr = str(ip_addr)
                 #print (str(os.system('ping %s -n 1' % (ip_addr,))))
-                result = str(ip_addr),';',str((os.system('ping %s -n 1' % (ip_addr,)))),';\n'
+                #for Linux
+                result = str(ip_addr),';',str((os.system('ping -c 1' % (ip_addr,)))),';\n'
+                #for windows
+                #result = str(ip_addr),';',str((os.system('ping %s -n 1' % (ip_addr,)))),';\n'
                 ip_addr_file.writelines (result)
